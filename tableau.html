@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tableau.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='style'>
+    <script src="https://kit.fontawesome.com/1d45f4bcc8.js" crossorigin="anonymous"></script>
+    <title>Tableau de bord</title>
+</head>
+<body>
+   
+    <nav>
+        <span>Tableau de bord</span>
+            <ul class="sidebar-menu">
+                <li><a href="lading.html"><i class="fa fa-home"></i>Accueil</a></li>
+                <li><a href="#"><i class="fa fa-book"></i>Genres Littéraire</a></li>
+                <li><a href="#"><i class="fa fa-tasks"></i>Tâches</a></li>
+                <li><a href="#"><i class="fa fa-pencil-square-o"></i>Edition des Etats</a></li>
+                <li><a href="#"><i class="fa fa-money"></i>Bilan Financier</a></li>
+                <li><a href="#"><i class="fa fa-line-chart"></i>Statistique</a></li>
+                <li><a href="#"><i class="fa fa-cog"></i>Paramètre</a></li>
+            </ul>
+     </nav>
+     <div class="head">
+        <div class="logo">BIBLIO</div>
+        <div class="recherche">
+            <input type="search" placeholder="recherche">
+            <span class="fa fa-search"></span>
+        </div>
+        <ol>
+            <li><a href=""><span class="fa fa-user"></span></a></li>
+            <li><a href="">Deconnexion</a></li>
+        </ol>
+    </div>
+    
+    <div class="container">
+        <div class="box"><img src="img/livre-ouvert.png" alt=""><br><a href="">Livres et Documents</a> </div>
+        <div class="box"><img src="img/lecteur.png" alt=""><br><a href="lecteurs.html">Lecteurs</a></div>
+        <div class="box"><img src="img/emprunter.png"><br><a href="">Gestion des Emprunts</a></div>
+        <div class="box"><img src="img/sanction.png"><br><a href="">Gestion des Sanctions</a></div>
+    </div>
+    <div class="tableau">
+        <table>
+         <thead>
+             <tr>
+                <th>Numero</th>
+                <th>Page de garde</th>
+                <th>Titre</th>
+                <th>Genre</th>
+                <th>Auteur</th>
+                <th>Stock disponible</th>
+                <th>Nombre Emprunté</th>
+                <th>Action</th>
+             </tr>
+         </thead>
+         <tbody>
+            <tr>
+                <td>1</td>
+                <td><img src="img2/1.jfif" alt=""></td>
+                <td>Le Cid, Corneille</td>
+                <td>Théatre</td>
+                <td>Pierre Corneille</td>
+                <td>16</td>
+                <td>0</td>
+                <td>
+                    <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><img src="img2/2.jpg" alt=""></td>
+                <td>Les Misérables</td>
+                <td>Roman</td>
+                <td>Victior Hugo</td>
+                <td>8</td>
+                <td>0</td>
+                <td>
+                    <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><img src="img2/3.jfif" alt=""></td>
+                <td>Les fleurs du mal</td>
+                <td>Poème</td>
+                <td>Chaeles Baudelaire</td>
+                <td>8</td>
+                <td>0</td>
+                <td>
+                    <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="delete"><i class="fa-solid fa-trash"></i></button>
+                </td>
+            </tr>
+         </tbody>
+         
+        </table>
+        <div class="pagination">
+            <div><i class="fa-solid fa-angles-left"></i></div>
+            <div><i class="fa-solid fa-chevron-left"></i></div>
+            <div>1</div>
+            <div>2</div>
+            <div><i class="fa-solid fa-chevron-right"></i></div>
+            <div><i class="fa-solid fa-angles-right"></i></div>
+        </div>
+    </div>
+</body>
+</html>

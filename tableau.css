@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: fixed;
+    width: 260px;
+    height: 100%;
+    min-height: 350px;
+    color: white;
+    background: rgb(24, 1, 107);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+    transition: ease-in 0.3s;
+    z-index: 100;
+    margin-top: 0;
+}
+
+nav span{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 19px;
+    font-weight: 1000;
+    overflow: hidden;
+}
+
+.sidebar-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+
+.sidebar-menu li{
+    text-align: center;
+    width: 100%;
+}
+
+
+.sidebar-menu li a{
+    display: inline-flex;
+    align-items: center;
+    width: 95%;
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: ease-in 0.2s;
+    border-radius: 5px;
+
+}
+
+.sidebar-menu li a:hover{
+    color: azure;
+    border: 1px solid white;
+}
+
+.sidebar-menu li a i{
+    margin: 0 18px;
+    width: 20px;
+
+}
+
+.head{
+    display: flex;
+    margin-left: 240px;
+    background: rgb(24, 1, 107);
+    height: 70px;
+    position: relative;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.logo{
+    font-size: 30px;
+    font-style: initial;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.head OL{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+
+.head ol li{
+    margin: 0 2px;
+}
+
+.head ol li a{
+
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+}
+
+.head ol li:hover a{
+    background: #fff;
+    color:rgb(24, 1, 107);
+
+}
+
+.head .recherche{
+    display: flex;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+}
+
+.head .recherche input{
+    border: none;
+    outline: none;
+    background: #fff;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 300px; 
+}
+
+.head .recherche span{
+
+    color:rgb(24, 1, 107);
+    font-size: 20px;
+    background: #fff;
+    height: 100%;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.head .recherche span:hover{
+    color: #fff;
+}
+
+.head .recherche span::after{
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: #ff003c;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.head .recherche span:hover:after{
+    width: 100%;
+}
+
+.container{
+    margin-top: 25px;
+    margin-left: 250px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.container .box{
+    height: 110px;
+    width: 230px;
+    border: 1px solid #f8e4e4;
+    border-radius: 10px;
+    text-align: center;
+    background: #026e65;
+}
+
+.container .box img{
+    height: 50px;
+  width: 50px;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.container .box a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.tableau{
+    margin-top: 20px;
+    margin-left: 270px;
+
+}
+
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width:1080px ;
+    color: #8493a5;
+   font-size: 15px;
+   border-collapse: collapse;
+}
+
+th, td{
+border-bottom: 1px solid #dddddd;
+padding: 10px 15px;
+text-align: center;
+
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    background: #f6f9fc;
+}
+
+td img{
+    width: 54px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ced0d2;
+}
+
+tr:hover td{
+    color: #0298cf;
+    background-color: #f6f9fc;
+}
+
+td button{
+    padding: 10;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+td button i{
+    color: #fff;
+    cursor: pointer;
+   
+}
+
+td .edit{
+    background-color: #0298cf;
+    cursor: pointer;
+   
+
+}
+td .delete{
+    background-color: red;
+    cursor: pointer;
+
+}
+
+::-webkit-scrollbar{
+    height: 5px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgb(0, 0,3);
+}
+
+::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 6px rgb(0, 0,3);
+}
+
+.pagination{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.pagination div{
+    padding: 10px;
+    border: 2px solid #d5d0dd;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #026e65;
+    color: #ffffff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+
